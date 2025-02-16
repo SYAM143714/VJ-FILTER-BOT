@@ -11,8 +11,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '28054229'))
-API_HASH = environ.get('API_HASH', '77d3a1717aa62d66eb52c479ded569f7')
+API_ID = int(environ.get('API_ID', '22610463'))
+API_HASH = environ.get('API_HASH', '703a3021d4dd839caa00c97e6456b317')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
@@ -21,15 +21,15 @@ PICS = (environ.get('PICS', 'https://envs.sh/6bu.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6657479416 2213132197 1651738056').split()] # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1546619359').split()] # For Multiple Id Use One Space Between Each.
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002395312220'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002370680942'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002275819718').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002451543604').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -87,7 +87,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/TDB251')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ibommaoneofficials')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TDHCHART1') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/RINGAN_OF_SASUKE')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Nandi00000')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
